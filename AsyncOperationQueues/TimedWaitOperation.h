@@ -9,6 +9,7 @@
 
 @interface TimedWaitOperation : NSOperation
 
+// Designated initializer.
 - (id)initWithWaitTime:(NSTimeInterval)waitTime;
 
 @end
