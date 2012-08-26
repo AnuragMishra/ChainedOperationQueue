@@ -1,0 +1,239 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7543BA6815EAAB7F00A3049A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7543BA6715EAAB7F00A3049A /* Foundation.framework */; };
+		7543BA6B15EAAB7F00A3049A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7543BA6A15EAAB7F00A3049A /* main.m */; };
+		7543BA6F15EAAB7F00A3049A /* AsyncOperationQueues.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7543BA6E15EAAB7F00A3049A /* AsyncOperationQueues.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7543BA6115EAAB7F00A3049A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				7543BA6F15EAAB7F00A3049A /* AsyncOperationQueues.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7543BA6315EAAB7F00A3049A /* AsyncOperationQueues */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AsyncOperationQueues; sourceTree = BUILT_PRODUCTS_DIR; };
+		7543BA6715EAAB7F00A3049A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7543BA6A15EAAB7F00A3049A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7543BA6D15EAAB7F00A3049A /* AsyncOperationQueues-Prefix.pch */ = {isa = PBXFileReference; path = "AsyncOperationQueues-Prefix.pch"; sourceTree = "<group>"; };
+		7543BA6E15EAAB7F00A3049A /* AsyncOperationQueues.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AsyncOperationQueues.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7543BA6015EAAB7F00A3049A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7543BA6815EAAB7F00A3049A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7543BA5815EAAB7F00A3049A = {
+			isa = PBXGroup;
+			children = (
+				7543BA6915EAAB7F00A3049A /* AsyncOperationQueues */,
+				7543BA6615EAAB7F00A3049A /* Frameworks */,
+				7543BA6415EAAB7F00A3049A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7543BA6415EAAB7F00A3049A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7543BA6315EAAB7F00A3049A /* AsyncOperationQueues */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7543BA6615EAAB7F00A3049A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7543BA6715EAAB7F00A3049A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7543BA6915EAAB7F00A3049A /* AsyncOperationQueues */ = {
+			isa = PBXGroup;
+			children = (
+				7543BA6A15EAAB7F00A3049A /* main.m */,
+				7543BA6E15EAAB7F00A3049A /* AsyncOperationQueues.1 */,
+				7543BA6C15EAAB7F00A3049A /* Supporting Files */,
+			);
+			path = AsyncOperationQueues;
+			sourceTree = "<group>";
+		};
+		7543BA6C15EAAB7F00A3049A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7543BA6D15EAAB7F00A3049A /* AsyncOperationQueues-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7543BA6215EAAB7F00A3049A /* AsyncOperationQueues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7543BA7215EAAB7F00A3049A /* Build configuration list for PBXNativeTarget "AsyncOperationQueues" */;
+			buildPhases = (
+				7543BA5F15EAAB7F00A3049A /* Sources */,
+				7543BA6015EAAB7F00A3049A /* Frameworks */,
+				7543BA6115EAAB7F00A3049A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsyncOperationQueues;
+			productName = AsyncOperationQueues;
+			productReference = 7543BA6315EAAB7F00A3049A /* AsyncOperationQueues */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7543BA5A15EAAB7F00A3049A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Anurag Mishra";
+			};
+			buildConfigurationList = 7543BA5D15EAAB7F00A3049A /* Build configuration list for PBXProject "AsyncOperationQueues" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7543BA5815EAAB7F00A3049A;
+			productRefGroup = 7543BA6415EAAB7F00A3049A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7543BA6215EAAB7F00A3049A /* AsyncOperationQueues */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7543BA5F15EAAB7F00A3049A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7543BA6B15EAAB7F00A3049A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7543BA7015EAAB7F00A3049A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7543BA7115EAAB7F00A3049A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7543BA7315EAAB7F00A3049A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AsyncOperationQueues/AsyncOperationQueues-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7543BA7415EAAB7F00A3049A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AsyncOperationQueues/AsyncOperationQueues-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7543BA5D15EAAB7F00A3049A /* Build configuration list for PBXProject "AsyncOperationQueues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7543BA7015EAAB7F00A3049A /* Debug */,
+				7543BA7115EAAB7F00A3049A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7543BA7215EAAB7F00A3049A /* Build configuration list for PBXNativeTarget "AsyncOperationQueues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7543BA7315EAAB7F00A3049A /* Debug */,
+				7543BA7415EAAB7F00A3049A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7543BA5A15EAAB7F00A3049A /* Project object */;
+}
