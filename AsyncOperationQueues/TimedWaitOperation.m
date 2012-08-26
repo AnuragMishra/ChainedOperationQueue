@@ -29,13 +29,19 @@
     return self;
 }
 
+// This method is called when our work finishes. It's
+// something we are using to track the completion of our work,
+// and is not part of the NSOperation APIs.
+//
+// At this point, we should also notify the observers that we are
+// done, and change the _executing and _finished flags accordingly,
+// which is happening in the finish method.
 - (void)doneWaiting {
     NSLog(@"Waited for %f seconds.", _waitTime);
     [self finish];    
 }
 
 // Must override this method for *concurrent* operations.
-
 - (void)start {
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -86,6 +92,7 @@
     [self didChangeValueForKey:@"isFinished"];
 }
 
+// Must override this method for *concurrent* operations.
 // Since this example is demonstrating how to deal with
 // asynchronous and dependent operations, this example is
 // purely concurrent.
@@ -93,10 +100,12 @@
     return YES;
 }
 
+// Must override this method for *concurrent* operations.
 - (BOOL)isExecuting {
     return _executing;
 }
 
+// Must override this method for *concurrent* operations.
 - (BOOL)isFinished {
     return _finished;
 }
