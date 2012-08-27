@@ -26,8 +26,8 @@ Then, add all operations to a `NSOperationQueue` and watch it run.
 
 And that is it!
 
-Here are the files worth checking out in this example.
+Here are the files worth checking out in this example. The `TimedOperation` class fakes an asynchronous operation using a timer. You can specify the amount of time you would want this operation to take to completion. Once that time is up, the operation is marked as completed. Three operations are chained in this example. The second operation can only begin once the first one finished, and the third can begin only when the second one finishes.
 
 - [main.m](https://github.com/AnuragMishra/ChainedOperationQueue/blob/master/AsyncOperationQueues/main.m) is where everything is setup and run.
 - [TimedWaitOperation.h](https://github.com/AnuragMishra/ChainedOperationQueue/blob/master/AsyncOperationQueues/TimedWaitOperation.h) is the header for the actual operation. It's a subclass of `NSOperation`.
-- [TimedWaitOperation.m](https://github.com/AnuragMishra/ChainedOperationQueue/blob/master/AsyncOperationQueues/TimedWaitOperation.h) is the implementation of this custom operation.
+- [TimedWaitOperation.m](https://github.com/AnuragMishra/ChainedOperationQueue/blob/master/AsyncOperationQueues/TimedWaitOperation.m) is the implementation of this custom operation.
