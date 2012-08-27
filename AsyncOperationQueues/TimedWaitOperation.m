@@ -42,6 +42,8 @@
 }
 
 // Must override this method for *concurrent* operations.
+// You can call this method directly, or it will be called
+// by an operation queue to begin this operation.
 - (void)start {
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -54,13 +56,12 @@
     // Ensure the method hasn't been cancelled since it was
     // added to the queue. If it has been cancelled,
     // then we better not start it.
-    NSLog(@"Starting wait for %f seconds.", _waitTime);
     if ([self isCancelled]) {
         [self finishOnly];
         return;
     }
 
-    // 1. START the real work here
+    // 1. START the real work here, and,
     // 2. Notify observers through KVO that we are starting the
     // execution of the work.
     //
@@ -68,6 +69,7 @@
     // to work with a  NSOperationQueue.
     [self willChangeValueForKey:@"isExecuting"];
     _executing = YES;
+    NSLog(@"Starting wait for %f seconds.", _waitTime);
     [NSTimer scheduledTimerWithTimeInterval:_waitTime target:self selector:@selector(doneWaiting) userInfo:nil repeats:NO];
     [self didChangeValueForKey:@"isExecuting"];
 }
