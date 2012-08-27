@@ -31,9 +31,8 @@ int main(int argc, const char * argv[])
         // 4. Add all operations to the queue, and watch it run :)
         [queue addOperations:[NSArray arrayWithObjects:a, b, c, nil] waitUntilFinished:NO];
 
-        // This is simply to extend the life of the current run loop. In it's absence,
-        // the program would simply terminate before all the operations have
-        // finished execution.
+        // This is simply to extend the life of the current run loop. In its absence,
+        // the program would terminate before all the operations have finished execution.
         while (queue.operationCount > 0) {
             [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
         }
