@@ -28,8 +28,6 @@ And that is it!
 
 Here are the files worth checking out in this example.
 
-[main.m](https://github.com/AnuragMishra/ChainedOperationQueue/blob/master/AsyncOperationQueues/main.m) is where everything is setup and run.
-
-[TimedWaitOperation.h](https://github.com/AnuragMishra/ChainedOperationQueue/blob/master/AsyncOperationQueues/TimedWaitOperation.h) is the header for the actual operation. It's a subclass of `NSOperation`.
-
-[TimedWaitOperation.m](https://github.com/AnuragMishra/ChainedOperationQueue/blob/master/AsyncOperationQueues/TimedWaitOperation.h) is the implementation of this custom operation.
+- [main.m](https://github.com/AnuragMishra/ChainedOperationQueue/blob/master/AsyncOperationQueues/main.m) is where everything is setup and run.
+- [TimedWaitOperation.h](https://github.com/AnuragMishra/ChainedOperationQueue/blob/master/AsyncOperationQueues/TimedWaitOperation.h) is the header for the actual operation. It's a subclass of `NSOperation`.
+- [TimedWaitOperation.m](https://github.com/AnuragMishra/ChainedOperationQueue/blob/master/AsyncOperationQueues/TimedWaitOperation.h) is the implementation of this custom operation.
